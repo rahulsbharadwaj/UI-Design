@@ -1,0 +1,487 @@
+<!docetpe html>
+<html lang="en">
+<head>
+  <title>iMCM ITSSRC Member Detail</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#border1{
+border-bottom:1px solid grey;
+}
+</style>
+  
+ </head>
+<body>
+<!--start of navbar-->
+<nav class="navbar navbar-default ">
+  <div class="container">
+<!--navbar brand-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="dashbord.html"  ><font size="5" color="orange">ITSSRC</font><font size="5" color="deepskyblue">iMCM&nbsp;System</font></a>
+    </div>
+<!--end of navbar brand-->
+<!--start of navbar content-->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+<!-- the first dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;MEMBER <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="group_final.html">Member </a></li>
+            <li><a href="#">Member Approve</a></li>
+          </ul>
+        </li>
+<!--the second dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-group"></i>&nbsp;Group<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Group</a></li>
+            <li><a href="#">Group Approve</a></li>
+          </ul>
+        </li>
+<!--the third dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='far fa-money-bill-alt'></i>&nbsp;LOAN<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="loan.html">Loan Product</a></li>
+            <li><a href="#">Demand Taking</a></li>
+			<li><a href="#">Loan Demand Proposal</a></li>
+			<li><a href="#">Cradit Line</a></li>
+			<li><a href="#">Loan Disbursement</a></li>
+			<li><a href="#">Repayment Card</a></li>
+			<li><a href="#">Loan Collection</a></li>
+			<li><a href="#">Loan Initilization</a></li>
+			<li><a href="#">Delinquency</a></li>
+			<li><a href="#">Premature Closure</a></li>		
+          </ul>
+        </li>
+<!--the forth dropdown-->
+		<li class="dropdown">
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;ACCOUNTING<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Accounting Type</a></li>
+            <li><a href="#">Accounting Rule</a></li>
+			<li><a href="#">Transaction Type</a></li>
+			<li><a href="#">Manual Entry</a></li>
+          </ul>
+        </li>
+<!--the fifth dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='far fa-file-pdf'></i>&nbsp;REPORT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Reports</a></li>
+          </ul>
+        </li>
+<!--the sixth dropdown-->
+	    <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='fab fa-stack-exchange'></i>&nbsp;CONFIG<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Invoice</a></li>
+			<li><a href="#">Location</a></li>
+			<li><a href="#">Bank/Branch</a></li>
+			<li><a href="#">Branch Relation</a></li>
+			<li><a href="#">Co Panchayat Relation</a></li>
+			<li><a href="#">Founding Line Entry</a></li>
+			<li><a href="#">New Roles</a></li>
+			<li><a href="#">User Role Menu</a></li>
+			<li><a href="#">Menu Items</a></li>
+			<li><a href="#">Configurable LookUp</a></li>
+          </ul>
+        </li>
+<!--the seventh dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='fas fa-rupee-sign'></i>&nbsp;SAVE<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Saving</a></li>
+            <li><a href="#">Saving Withdrawal</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Login</a>
+		  <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+			<li><a href="#">Help Desk</a></li>
+			<div class="dropdown-divider"></div>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+		 </li>
+      </ul>
+	 </ul>
+    </div>
+  </div>
+</nav>
+<!--end of navigation bar-->
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<div id="border1">
+			<p><h4>Member Details</h4></p>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-3">
+		<div>
+			<img class="img" alt="image" src="img1.jpg" width="100%" height="25%" style="border:1px solid black;border-radius:5px">
+		</div>
+		<br>
+		<div>
+			<img class="img-thumbnails" alt="barcode" src="img3.png" width="100%" height="25%">
+		</div>
+		<br>
+  <div class="panel-group">
+    <div class="panel panel-default" >
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          Contact Information
+        </h6>
+      </div>
+      <div >
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class="fa fa-mobile-phone"></i>&nbsp;0123456789<span class="pull-right"><i>Mobile</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		        <i class="fa fa-phone"></i>&nbsp;012345678<span class="pull-right"><i>Phone</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class="fa fa-envelope"></i>&nbsp;rahul@gmail.com<span class="pull-right"><i>email</i></span>	
+				</a>
+    		</div>
+      </div>
+    </div>
+  </div> 		
+	<br>
+  <div class="panel-group">
+    <div class="panel panel-default" >
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          Account Information
+        </h6>
+      </div>
+      <div >
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class="fa fa-sort-numeric-desc"></i>&nbsp;0123<span class="pull-right"><i>SB A/C No.</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		         <i class="fa fa-sort-numeric-desc"></i>&nbsp;012345<span class="pull-right"><i>Loan A/C No.</i></span>	
+				</a>
+
+    		</div>
+      </div>
+    </div>
+  </div> 
+  <br>
+  <div class="panel-group">
+    <div class="panel panel-default" >
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          Location
+        </h6>
+      </div>
+      <div >
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class="fa fa-map-marker"></i>&nbsp;Bos Leav Kroam<span class="pull-right"><i>village</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		         <i class="fa fa-map-marker"></i>&nbsp;Bos Leav<span class="pull-right"><i>Panchayat</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		         <i class="fa fa-map-marker"></i>&nbsp;Bangalor-urban<span class="pull-right"><i>District</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		         <i class="fa fa-map-marker"></i>&nbsp;Karnataka<span class="pull-right"><i>State</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		         <i class="fa fa-map-marker"></i>&nbsp;India<span class="pull-right"><i>Country</i></span>	
+				</a>
+
+    		</div>
+      </div>
+    </div>
+  </div> 
+	</div>
+	<div class="col-md-9">
+		<h3>Rahul S Bharadwaj</h3>
+		<span class="pull-right"><i>(Member cycle-1)</i></span>
+		<table class="table table-striped ">
+			<tbody>
+			<tr>
+				<td width="20%"><b>Date of Birth</b></td>
+				<td width="30%">:04/01/1996</td>
+				<td width="20%"><b>Branch</b></td>
+				<td width="30%">:Rajajinagar Branch</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Gender</b></td>
+				<td width="30%">:Male</td>
+				<td width="20%"><b>Field Officer</b></td>
+				<td width="30%">:Shyam</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Maratal Status</b></td>
+				<td width="30%">:Unmarrid</td>
+				<td width="20%"><b>Group</b></td>
+				<td width="30%">:Rose</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Blood Group</b></td>
+				<td width="30%">:B+</td>
+				<td width="20%"></td>
+				<td width="30%"></td>
+
+			</tr>
+			<tr>
+				<td width="20%"><b>Father Name</b></td>
+				<td width="30%">:Ram</td>
+				<td width="20%"></td>
+				<td width="30"></td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Status</b></td>
+				<td width="30%">:Active</td>
+				<td width="20%"></td>
+				<td width="30"></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-md-9">
+	
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse1">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          Personal and Educational Details
+        </h6>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+	  <br>
+		<table class="table ">
+			<tbody>
+			<tr>
+				<td width="20%"><b>Religion</b></td>
+				<td width="30%">:Hindhu</td>
+				<td width="20%"><b>Occupation/Activity</b></td>
+				<td width="30%">:Farmer</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Member Rating</b></td>
+				<td width="30%">:56</td>
+				<td width="20%"><b>Education</b></td>
+				<td width="30%">:Never went to school,not studied</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Maratal Status</b></td>
+				<td width="30%">:Unmarrid</td>
+				<td width="20%"><b>Group</b></td>
+				<td width="30%">:Rose</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Head of the family</b></td>
+				<td width="30%">:No</td>
+				<td width="20%"><b>Annuak Incone</b></td>
+				<td width="30%">500000</td>
+
+			</tr>
+			<tr>
+				<td width="20%"><b>House Ownership</b></td>
+				<td width="30%">:Ram</td>
+				<td width="20%"><b>Monthly Expense</b></td>
+				<td width="30">15000</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Birth Place</b></td>
+				<td width="30%">:Bangalore</td>
+				<td width="20%"><b>Insurence sum</b></td>
+				<td width="30">:500000</td>
+			</tr>
+			<tr>
+				<td width="20%"><b>Assets Details</b></td>
+				<td width="30%">:Land</td>
+				<td width="20%"></td>
+				<td width="30"></td>
+			</tr>
+			</tbody>
+		</table>
+      </div>
+    </div>
+  </div>
+	</div>
+	<div class="col-md-9">
+	
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse2">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+		 Relationship Details
+        </h6>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse in">
+	  <br>
+		<table class="table  table-responsive">
+			<thead>
+			<tr>
+				<th >Name</th>
+				<th >Type</th>
+				<th >Relationship</th>
+				<th >Age</th>
+				<th>Occupation</th>
+				<th>Annual Income</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Rahul</td>
+				<td>Dependents</td>
+				<td>Son</td>
+				<td>15</td>
+				<td>student</td>
+				<td><i class="fa fa-rupee"></i>0</td>
+			</tr>
+			</tbody>
+		</table>
+      </div>
+    </div>
+  </div>
+	</div>
+	<div class="col-md-9">
+	
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse3">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+		 Document Details
+        </h6>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse in">
+	  <br>
+	  <div class="container">
+		<i>No Documents Added</i>
+	  </div>
+      </div>
+    </div>
+  </div>
+	</div>
+	
+	<div class="col-md-9">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse4">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+		 Member History Details
+        </h6>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse in">
+	  <br>
+	  <div class="xp5">
+		<table class="table  table-responsive">
+	
+			<thead>
+			<tr>
+				<th >User</th>
+				<th >Date and Time</th>
+				<th >Status</th>
+				<th >Description</th>
+
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Rahul</td>
+				<td>18-02-2019 16:22</td>
+				<td>Inactive</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Rahul</td>
+				<td>18-02-2019 16:22</td>
+				<td>Inactive</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Rahul</td>
+				<td>18-02-2019 16:22</td>
+				<td>Inactive</td>
+				<td></td>
+			</tr>
+			</tbody>
+		</table>
+      </div>
+    </div>
+	</div>
+  </div>
+	</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+</div>
+	<div class="col-md-9">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse3">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+		 Interaction Log Details
+        </h6>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse in">
+	  <br>
+	  <div class="container">
+		<i>No Documents Added</i>
+	  </div>
+      </div>
+    </div>
+   </div>
+   <span class="pull-right">
+    <a href="group_final.html"><button type="button" class="btn btn-secondary" > <i class="fa fa-list"></i> List</button></a>
+   </span>
+   </div>
+   </div>
+</div>
+<br>
+<br>
+<!--Start of footer-->
+<nav class="navbar navbar-default navbar-expand-sm  ">
+<div class="container">
+<div class="navbar-footer">
+				<a class="navbar-brand" href="#"  ><font size="5" color="orange">ITSSRC</font><font size="5" color="deepskyblue">iMCM&nbsp;System</font></a>
+			    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="navbar-text">
+				<div style="text-align:center">
+				<p class="text-center">Copyrights&nbsp;<i class='far fa-copyright'></i>&nbsp;ITSSRC (p) Ltd.All Rights Reserved</p>
+				</div>
+				</span>
+				
+				<!--				<div class="pull-right">
+				<form>
+					<select name="Language">
+						<option value="volvo">English</option>
+						<option value="saab">Kannada</option>
+						<option value="fiat">French</option>
+						<option value="audi">German</option>
+					</select>
+				</form>
+			</div>	
+			-->
+</div>
+</div>
+</nav>
+</body>
+</html>

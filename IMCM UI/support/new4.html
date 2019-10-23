@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Div colum</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<style>
+</style>
+<script type="text/javascript">
+  window.onload = function () {
+
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+        axisY:{
+            valueFormatString:"#######.00"
+        },
+        axisX:{
+           valueFormatString:"####"
+        },
+      data: [
+      {        
+        type: "area",
+        xValueFormatString:"Year ####",
+        yValueFormatString:"#######.00",
+        dataPoints: [
+			{ x:2009, y: 50000 },
+			{ x:2010, y: 90000},
+			{ x:2011, y: 120000 },
+			{ x:2012, y: 140000 },
+			{ x:2013, y: 150000 },
+			{ x:2014, y: 180000  },
+			{ x:2015, y: 120000 },
+        ]
+      },{
+        type: "area",
+        xValueFormatString:"Year ####",
+        yValueFormatString:"#######.00",
+		dataPoints: [
+			{ x:2009, y: 45000 },
+			{ x:2010, y: 85000},
+			{ x:2011, y: 115000 },
+			{ x:2012, y: 135000 },
+			{ x:2013, y: 145000 },
+			{ x:2014, y: 175000  },
+			{ x:2015, y: 115000 },
+
+		]
+	}
+      ]
+    });
+
+    chart.render();
+  }
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Collection Progress',     7],
+          ['Rejected',      1],
+          ['Group Created',  4],
+          ['Disbursed ', 1],
+		  ['Demand Taken ', 1],
+		  ['Group Approved ', 1],
+          ['Proposal',    1]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script> 
+</head>
+<body>
+<div class="container">
+  <div class="row">
+  <!--First colum-->
+	<div class="col-sm-3">
+		<div>
+			<!--the image-->
+			<img src="ing.jpg" alt="bank-logo" width="200px" height="120px">
+		</div>
+		<div>
+			<!--first panel-->
+		    <div class="panel panel-success">
+				<div class="panel-heading"><p>LeaderShip</p></div>
+				<div class="panel-body">
+					<img class="img-circle" src="person.png"width="40px" height="40px"><p style="float:right"><i>Chairman</i></p> 
+				</div>
+				<div class="panel-footer">
+					<span >
+					<span class="glyphicon glyphicon-user "></span>
+					<span class="glyphicon glyphicon-envelope "></span>
+					<span class="glyphicon glyphicon-phone "></span>
+					<i class="fas fa-phone "></i>
+					</span>
+				</div>
+				<div class="panel-body">
+					<img class="img-circle" src="person.png"width="40px" height="40px"><p style="float:right"><i>General Manager</i></p>
+				</div>
+				<div class="panel-footer">
+					<div>
+					<span class="glyphicon glyphicon-user"></span>
+					<span class="glyphicon glyphicon-envelope"></span>
+					<span class="glyphicon glyphicon-phone"></span>
+					<i class='fas fa-phone'></i>
+					</div>
+				</div>				
+            </div>
+		</div>
+		<br>
+		<p><h5>Address</h5></p>
+		<div>
+			<!--second panel-->
+			<div class="panel panel-default">
+				<div class="panel-heading"><span class="glyphicon glyphicon-map-marker"></span> #696 <p style="float:right"><i>Building</i></div>
+				<div class="panel-footer"><span class="glyphicon glyphicon-home"></span> Street 2 <p style="float:right"><i>Block</i></div>
+			</div>
+		</div>
+		<br>
+		<p><h5>Location</h5></p>
+		<div>
+			<!--third panel-->
+			<div class="panel panel-default">
+				<div class="panel-heading"><span class="glyphicon glyphicon-map-marker"></span> 458,38th cross <p style="float:right"><i>Address</i></div>
+				<div class="panel-heading"><span class="glyphicon glyphicon-map-marker"></span> Bangalore <p style="float:right"><i>City</i></div>
+				<div class="panel-heading"><span class="glyphicon glyphicon-map-marker"></span> Karnataka <p style="float:right"><i>State</i></div>
+				<div class="panel-heading"><span class="glyphicon glyphicon-map-marker"></span> India <p style="float:right"><i>Country</i></div>
+				<div class="panel-heading"><span class="glyphicon glyphicon-map-marker"></span> 560010 <p style="float:right"><i>pin</i></div>
+			</div>
+		</div>
+		<br>
+		<p><h5>Contact</h5></p>
+		<div>
+			<!--forth panel-->
+			<div class="panel panel-default">
+				<div class="panel-heading"><i class='fas fa-phone'></i></span><p style="float:right"><i>Phone</i></p></div>
+				<div class="panel-footer"><span class="glyphicon glyphicon-phone"></span><p style="float:right"><i>Mobile</i></p></div>
+				<div class="panel-footer"><span class="glyphicon glyphicon-envelope"></span> info@itssrc.com<p style="float:right"><i>Email</i></p></div>
+				<div class="panel-footer"><span class="glyphicon glyphicon-globe"></span> itssrc.com<p style="float:right"><i>Web</i></div>
+			</div>
+		</div>		
+		<br>
+			<!--Fifth panel-->
+			<div class="panel panel-default">
+				<div class="panel-heading"><i class="fa fa-wechat"></i>&nbsp;chat
+						<div style="float:right">
+							<div class="dropdown">
+							
+								<button type="button" class="btn btn-xs btn-default  dropdown-toggle" data-toggle="dropdown"><i class='fas fa-chevron-down'></i></button>
+								<div class="dropdown-menu">
+										&nbsp;<span class="glyphicon glyphicon-refresh"></span>&nbsp;<a class="dropdown-item" href="#">"Refresh"</a><br>
+										&nbsp;<span class="glyphicon glyphicon-ok"></span>&nbsp;<a class="dropdown-item" href="#">"Available"</a><br>
+										&nbsp;<span class="glyphicon glyphicon-remove"></span>&nbsp;<a class="dropdown-item" href="#">"Busy"</a><br>
+										&nbsp;<span class="glyphicon glyphicon-time"></span>&nbsp;<a class="dropdown-item" href="#">"Away"</a><br>
+										&nbsp;<span class="glyphicon glyphicon-log-in"></span>&nbsp;<a class="dropdown-item" href="#">"Sign-out"</a><br>
+								</div>
+							</div>
+						</div>
+				</div>	
+				<div class="panel-body">
+						<p>hi good evening </p>
+				</div>
+				<div class="panel-footer">
+					<div class="input-group">
+						<input id="btn-input" type="text" class="form-control input-sm " placeholder="type-message">
+							<span class="input-group-btn">
+								<button class="btn btn-warning btn-sm" id="btn-chat">Send</button>
+							</span>
+					</div>
+				</div>
+			</div>		
+     </div>
+	 <br>
+    <!--Second column-->
+	<div class="col-sm-9">
+		<!--division of row in the second column-->
+		<div class="row">
+			    <div class="col-xs-3">
+		    <div class="panel panel-primary">
+				<div class="panel-heading">
+					<div class="row">
+					  <div class="col-xs-3">
+						<i class='fas fa-user' style='font-size:48px;color:white'></i>
+					  </div>
+					  <div class="col-xs-9 text-right">
+						<p style="color:white">Member<br><h3>33</h3></p>
+					  </div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<p style="color:blue">View Details</p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-arrow-alt-circle-right' style="color:blue"></i>
+				</div>
+			</div>
+			</div>
+				<div class="col-xs-3">
+				<div class="panel" style="border:1px solid green">
+					<div class="panel-heading" style="background-color:green">
+					   <div class="row">
+					     <div class="col-xs-3">
+						   <i class='fas fa-users' style='font-size:48px;color:white'></i>
+						 </div>
+						 <div class="col-xs-9 text-right">
+							<p style="color:white">Group<br><h3><span style="color:white">33</span></h3></p>
+						 </div>
+					  </div>
+					</div>
+					<div class="panel-body">
+						<p style="color:green">View Details</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-arrow-alt-circle-right' style="color:green"></i>
+					</div>
+				</div>
+				</div>		
+				<div class="col-xs-3">
+				<div class="panel " style="border:1px solid orange">
+					<div class="panel-heading" style="background-color:orange">
+					   <div class="row">
+					     <div class="col-xs-3">
+						   <i class="fa fa-bank" style="font-size:48px;color:white"></i>
+						 </div>
+						 <div class="col-xs-9 text-right">
+							<p style="color:white">Group<br><h3><span style="color:white">33</span></h3></p>
+						 </div>
+					  </div>
+				   
+					</div>
+					<div class="panel-body">
+						<p style="color:orange">View Details</p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-arrow-alt-circle-right' style="color:orange"></i>
+					</div>
+				</div>
+				</div>
+				<div class="col-xs-3">
+				<div class="panel" style="border:1px solid red">
+					<div class="panel-heading" style="background-color:red">
+       				  <div class="row">
+					     <div class="col-xs-3">
+						   <i class='fas fa-user-md' style='font-size:48px;color:white'></i>
+						 </div>
+						 <div class="col-xs-9 text-right">
+							<p style="color:white">Group<br><h3><span style="color:white">33</span></h3></p>
+						 </div>
+					  </div>   
+					</div>
+					<div class="panel-body">
+						<p style="color:red">View Details</p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class='fas fa-arrow-alt-circle-right' style="color:red"></i>
+					</div>
+				</div>
+				</div>				
+		</div>	
+	</div>
+    <div class="col-sm-9">
+	<div class="row">
+		<div class="col-xs-3">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse1">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          Member Information
+        </h6>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class='fas fa-user' style="color:green"></i>&nbsp;23<span class="pull-right"><i>Active</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		        <i class='fas fa-user' style="color:orange"></i>&nbsp;19<span class="pull-right"><i>Inactive</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='fas fa-user' style="color:lightgreen"></i>&nbsp;33<span class="pull-right"><i>Loanee</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='fas fa-user' style="color:red"></i>&nbsp;45<span class="pull-right"><i>Rejected</i></span>	
+				</a>
+    		</div>
+      </div>
+    </div>
+  </div>         
+		</div>
+		<div class="col-xs-3">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse2">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+          Group Information
+        </h5>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse in">
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class='fas fa-users' style='color:green'></i>&nbsp;3<span class="pull-right"><i>Active</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		        <i class='fas fa-users' style='color:orange'></i>&nbsp;23<span class="pull-right"><i>Inactive</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='fas fa-users' style='color:lightgreen'></i>&nbsp;15<span class="pull-right"><i>Approved</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='fas fa-users' style='color:red'></i>&nbsp;16<span class="pull-right"><i>Rejected</i></span>	
+				</a>
+    		</div>
+      </div>
+    </div>
+  </div>
+		</div>
+		<div class="col-xs-3">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse3">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+          Loan Information
+        </h5>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse in">
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class='far fa-list-alt' style="color:lightgreen"></i>&nbsp;0<span class="pull-right"><i>Demand Taken</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		        <i class="fa fa-bank" style="color:royalblue"></i>&nbsp;0<span class="pull-right"><i>Proposed</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class="fa fa-bank" style="color:gray"></i>&nbsp;0<span class="pull-right"><i>Disbursed</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:green"></i>&nbsp;23<span class="pull-right"><i>Active</i></span>	
+				</a>
+    		</div>
+      </div>
+    </div>
+  </div>
+		</div>
+		<div class="col-xs-3">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse4">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+         <font size="3"> User Profile </font>
+        </h5>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse in">
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class='fas fa-user' style="color:green"></i>&nbsp;4<span class="pull-right"><i>Credit Office</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		        <i class='fas fa-user' style="color:orange"></i>&nbsp;3<span class="pull-right"><i>Supervisor</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='fas fa-user' style="color:blue"></i>&nbsp;23<span class="pull-right"><i>Branch Manager</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='fas fa-user' style="color:royalblue"></i>&nbsp;2<span class="pull-right"><i>Total Employee</i></span>	
+				</a>
+    		</div>
+      </div>
+    </div>
+  </div>
+		</div>
+	</div>
+    </div>
+	<div class="col-sm-9">
+	<div class="row">
+		<div class="col-sm-9">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse5">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+         <font size="3"> User Profile </font>
+        </h5>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse in">
+<!--Chart 1-->
+       <div id="chartContainer" style="height: 245px; width: 100%;">
+       </div>
+
+<!--end of chart 1-->
+      </div>
+    </div>
+  </div>		
+		</div>
+		<div class="col-sm-3">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse6">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+         <font size="3"> User Profile </font>
+        </h5>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse in">
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class="fa fa-rupee" style="color:red"></i>&nbsp;0<span class="pull-right"><i>EBIT</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		        <i class="fa fa-rupee" style="color:orange"></i>&nbsp;0<span class="pull-right"><i>EBITDA</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:green"></i>&nbsp;23<span class="pull-right"><i>Total Profit</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:yellow"></i>&nbsp;2<span class="pull-right"><i>Profit Margin%</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:blue"></i>&nbsp;23<span class="pull-right"><i>ROC%</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:gray"></i>&nbsp;2<span class="pull-right"><i>ROE%</i></span>	
+				</a>				
+    		</div>
+      </div>
+    </div>
+  </div>		
+		</div>
+	</div>
+	</div>
+	<div class="col-sm-9">
+	<div class="row">
+		<div class="col-sm-4">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse7">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+         <font size="3">Operations</font>
+        </h5>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse ">
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action">
+			     <i class='far fa-money-bill-alt' style="color:red"></i>&nbsp;0<span class="pull-right"><i>Operation Expenses</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+   		        <i class='far fa-money-bill-alt' style="color:orange"></i>&nbsp;0<span class="pull-right"><i>Operation Margin%</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:green"></i>&nbsp;23<span class="pull-right"><i>Admin Expenses%</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='fas fa-dollar-sign'style="color:red"></i>&nbsp;2<span class="pull-right"><i>Sales and Marketing%</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:yellow"></i>&nbsp;23<span class="pull-right"><i>Revenue/Employee</i></span>	
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+		        <i class='far fa-money-bill-alt' style="color:royalblue"></i>&nbsp;2<span class="pull-right"><i>Interest & Tax</i></span>	
+				</a>				
+    		</div>
+      </div>
+    </div>
+  </div>		
+		</div>
+		<div class="col-sm-8">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse8">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+         <font size="3">Group Details</font>
+        </h5>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse ">
+<!-- chart2-->
+    <div id="donutchart" style="width: 100%; height: 245px;"></div>
+<!--end chart2-->
+      </div>
+    </div>
+  </div>
+		</div>
+	</div>
+	</div>
+	<div class="col-sm-9">
+	<div class="row">
+		<div class="col-sm-12">
+  <div class="panel-group">
+    <div class="panel panel-default" data-toggle="collapse" href="#collapse9">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+         Branch Details
+		<div style="float:right">
+		<button type="button" class="btn btn-primary btn-xs"><i class='far fa-file-excel'></i> Export</button>
+		</div>
+        </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse ">
+	  <br>
+			<table class="table table-bordered table-striped table-hover">
+			<thead>
+				<tr class="table-primary">
+					<th style="text-align:center">Brand Name</th>
+					<th style="text-align:center">Commune</th>
+					<th style="text-align:center">Village</th>
+					<th style="text-align:center">Member</th>
+					<th style="text-align:center">Group</th>
+					<th style="text-align:center">Demand Taken</th>
+					<th style="text-align:center">Active Loan</th>
+					<th style="text-align:center">Employee</th>
+					<th style="text-align:center">Portfolio</th>
+				</tr>
+			</thead>
+			</table>
+			<br>
+			<br>
+       </div>
+  </div>
+ </div>		
+		</div>
+		</div>
+	</div>
+	
+	
+</div>
+</div>
+
+</body>
+</html>

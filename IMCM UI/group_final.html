@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="view-port" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+<body>
+<!--start of navbar-->
+<nav class="navbar navbar-default  fixed-top">
+  <div class="container">
+<!--navbar brand-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="dashbord.html"  ><font size="5" color="orange">ITSSRC</font><font size="5" color="deepskyblue">iMCM&nbsp;System</font></a>
+    </div>
+<!--end of navbar brand-->
+<!--start of navbar content-->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+<!-- the first dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;MEMBER<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="group_final.html">Member </a></li>
+            <li><a href="#">Members Approve</a></li>
+          </ul>
+        </li>
+<!--the second dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-group"></i>&nbsp;Group<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Group</a></li>
+            <li><a href="#">Group Approve</a></li>
+          </ul>
+        </li>
+<!--the third dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='far fa-money-bill-alt'></i>&nbsp;LOAN<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="loan.html">Loan Product</a></li>
+            <li><a href="#">Demand Taking</a></li>
+			<li><a href="#">Loan Demand Proposal</a></li>
+			<li><a href="#">Cradit Line</a></li>
+			<li><a href="#">Loan Disbursement</a></li>
+			<li><a href="#">Repayment Card</a></li>
+			<li><a href="#">Loan Collection</a></li>
+			<li><a href="#">Loan Initilization</a></li>
+			<li><a href="#">Delinquency</a></li>
+			<li><a href="#">Premature Closure</a></li>		
+          </ul>
+        </li>
+<!--the forth dropdown-->
+		<li class="dropdown">
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-star"></span>&nbsp;ACCOUNTING<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Accounting Type</a></li>
+            <li><a href="#">Accounting Rule</a></li>
+			<li><a href="#">Transaction Type</a></li>
+			<li><a href="#">Manual Entry</a></li>
+          </ul>
+        </li>
+<!--the fifth dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='far fa-file-pdf'></i>&nbsp;REPORT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Reports</a></li>
+          </ul>
+        </li>
+<!--the sixth dropdown-->
+	    <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='fab fa-stack-exchange'></i>&nbsp;CONFIG<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Invoice</a></li>
+			<li><a href="#">Location</a></li>
+			<li><a href="#">Bank/Branch</a></li>
+			<li><a href="#">Branch Relation</a></li>
+			<li><a href="#">Co Panchayat Relation</a></li>
+			<li><a href="#">Founding Line Entry</a></li>
+			<li><a href="#">New Roles</a></li>
+			<li><a href="#">User Role Menu</a></li>
+			<li><a href="#">Menu Items</a></li>
+			<li><a href="#">Configurable LookUp</a></li>
+          </ul>
+        </li>
+<!--the seventh dropdown-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class='fas fa-rupee-sign'></i>&nbsp;SAVE<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Saving</a></li>
+            <li><a href="#">Saving Withdrawal</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Login</a>
+		  <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+			<li><a href="#">Help Desk</a></li>
+			<div class="dropdown-divider"></div>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+          </ul>
+		  </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Body-->
+
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading"><i class="fa fa-filter"></i>&nbsp;<strong>Filters</strong></div>
+		<div class="panel-body">
+<div class="row">
+	<div class="col-md-2">
+<strong><p>Branch</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-bank"></i></span></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="" >
+    </div>
+</form>
+	</div>
+	<div class="col-md-3">
+<strong><p>Field Office</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+    </div>
+</form>
+	</div>
+	<div class="col-md-3">
+<strong><p>Commune</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+    </div>
+</form>
+	</div>
+	<div class="col-md-2">
+<strong><p>Village</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+    </div>
+</form>
+	</div>
+	<div class="col-md-2">
+<strong><p>Status</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-flag"></i></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+    </div>
+</form>
+	</div>	
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel panel-heading">
+			<i class='fas fa-list'></i>&nbsp;<strong>Groups</strong>
+				<div style="float:right">
+					<button type="button" class="btn btn-primary btn-xs"><i class='far fa-file-excel'></i> Export</button>&nbsp;&nbsp;<button type="button" class="btn btn-primary btn-xs"><i class="fa fa-plus"></i> New</button>
+				</div>
+		</div>
+		<div class="panel-body">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th style="background-color:lightblue">Member Id</th>
+				<th style="background-color:lightblue">Member Name<p style="float:right"><i><font color="grey" size="1">&nbsp;(Member Cycle)</font></i></p></th>
+				<th style="background-color:lightblue">Gender<p style="float:right"><i><font color="grey" size="1">&nbsp;(Age)</font></i></p></th>
+				<th style="background-color:lightblue">Phone</th>
+				<th style="background-color:lightblue">Group Name</th>
+				<th style="background-color:lightblue">Field Officer</th>
+				<th style="background-color:lightblue">Last Update</th>
+				<th style="background-color:lightblue">Created on</th>
+				<th style="background-color:lightblue">Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>001</td>
+				<td>rahul</td>
+				<td>male</td>
+				<td>0123456789</td>
+				<td>group</td>
+				<td>shyam</td>
+				<td>16/02/19</td>
+				<td>15/02/19</td>
+				<td><a href="memberlist.html" ><i class="fa fa-eye" style="color:blue" ></i></a></td>
+			</tr>
+						<tr>
+				<td>002</td>
+				<td>shyam</td>
+				<td>male</td>
+				<td>0123456789</td>
+				<td>group</td>
+				<td>rahul</td>
+				<td>16/02/19</td>
+				<td>15/02/19</td>
+				<td><i class="fa fa-eye" style="color:blue"></i></td>
+			</tr>
+		</tbody>
+	</table>
+ <div>
+	<i class="fa fa-flag" style="color:green"></i>&nbsp;<font color="grey">Active</font> <i class="fa fa-flag" style="color:pink"></i>&nbsp;<font color="grey">Reject</font> <i class="fa fa-flag" style="color:red"></i>&nbsp;<font color="grey">InActive</font>
+	<span class="pull-right"><button type="button"class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Previous</button>&nbsp;1/2&nbsp;<button type="button" class="btn btn-secondary"><i class="fa fa-arrow-right"></i> Next</button></span>
+	</div>	
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+<!--End of Body-->
+<nav class="navbar navbar-default  ">
+<div class="container">
+<div class="navbar-footer">
+				<a class="navbar-brand" href="#"  ><font size="5" color="orange">ITSSRC</font><font size="5" color="deepskyblue">iMCM&nbsp;System</font></a>
+			   
+				<span class="navbar-text">
+				<p style="text-align:center">Copyrights&nbsp;<i class="fa fa-copyright "></i> ITSSRC(p) Ltd. All Rights Reserved</p>
+				</span>
+			
+				
+				<!--				<div class="pull-right">
+				<form>
+					<select name="Language">
+						<option value="volvo">English</option>
+						<option value="saab">Kannada</option>
+						<option value="fiat">French</option>
+						<option value="audi">German</option>
+					</select>
+				</form>
+			</div>	
+			-->
+</div>
+</div>
+</nav>
+</body>
+</html>
