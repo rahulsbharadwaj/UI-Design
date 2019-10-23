@@ -1,0 +1,130 @@
+<!docrype html>
+<html lang="en">
+<head>
+<title>Case update Page</title>
+<meta charset="utf-8">
+<meta name="view-port" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<br>
+<div class="container">
+
+<br>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<span>
+			<b>Case Information</b>
+		</span>
+	</div>
+	<div class="panel-body">
+	<div class="row">
+		<div class="col-md-4">
+<strong><p>Job Number</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-mobile-phone"></i></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Mobile number">
+    </div>
+</form>
+		</div>
+		<div class="col-md-4">
+<strong><p>Purpose</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Purpose" list="browsers1" >
+		<datalist id="browsers1">
+			<option value="Received">
+			<option value="Dispatch">
+		</datalist>
+    </div>
+</form>
+		</div>
+		<div class="col-md-4">
+<strong><p>Pickup Date & Time</p></strong>
+<form>
+    <div class="input-group">
+      <input type="datetime-local">
+    </div>
+</form>
+		</div>
+	</div>
+<div class="row">
+<div class="col-md-4">
+<strong><p> Branch</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-building"></i></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Branch"  list="browsers2">
+		<datalist id="browsers2">
+			<option value="Malleshwaram">
+			<option value="JP Nagar">
+			<option value="Marathalli">
+			<option value="Electronic City">
+			<option value="Kengeri">
+			<option value="Lab">
+		</datalist>   
+   </div>
+</form>
+</div>
+<div class="col-md-4">
+<strong><p>Field Enginee</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span></span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Field Enginee" list="browsers3">
+		<datalist id="browsers3">
+			<option value="Rahul">
+			<option value="kashi">
+		</datalist>     
+	</div>
+</form>
+</div>
+<div class="col-md-4">
+<strong><p>Case Status</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span></span>
+	  <input id="msg" type="text" class="form-control" name="msg" placeholder="Case Status" list="browsers4">
+	  	<datalist id="browsers4">
+			<option value="Created ">
+			<option value="In Progress">
+			<option value="Picked">
+			<option value="HandedOver">
+			<option value="Closed">
+			<option value="On-Hold">
+			<option value="Cancelled">
+		</datalist>    
+	</div>
+</form>
+</div>
+</div>
+<div class="row">
+<div class="col-md-5">
+<strong><p>Description</p></strong>
+<form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-edit"></i></span></span>
+      <textarea class="form-control" rows="3" id="comment"></textarea>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</br>
+		<span>
+			<span class="pull-right">
+			<button type="button" class="btn  btn-success">Save</button>&nbsp;&nbsp;&nbsp;
+			<button type="button" class="btn   btn-danger">Cancel</button>
+			</span>
+		</span>
+</div>
+</body>
+</html>
