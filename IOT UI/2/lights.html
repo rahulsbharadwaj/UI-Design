@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Lights</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body 
+{
+  background-color: #517396;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+fieldset
+{
+  background-color:#92a8d1;
+  padding:10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border:2px solid teal;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+}
+</style>
+</head>
+<body>
+<!--navigationBar-->
+<nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+<div class="container-fluid">
+<!--navigationBar Header-->
+<div class="navbar-header">
+   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+<a class="navbar-brand" href="home.html"><font color="deepskyblue">NAME</font></a>
+</div>
+
+<!--navigationBar links-->
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="home.html" ><font color="deepskyblue">Home</font></a></li>
+<li class="nav-item"><a class="nav-link" href="lights.html"><font color="deepskyblue">Lights</font></a></li>
+<li class="nav-item"><a class="nav-link" href="camera.html"><font color="deepskyblue">Camera</font></a></li>
+<li class="nav-item"><a class="nav-link" href="appliances.html"><font color="deepskyblue">Appliances</font></a></li>
+<li class="nav-item"><a class="nav-link" href="climate.html"><font color="deepskyblue">Climate</font></a></li>
+</ul>
+
+
+<!--navigationBar login-->
+ <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+  <ul class="navbar-nav">
+  <li class="nav-item">
+  <a class="nav-link" href="#"><font color="deepskyblue">Login</font><span class="glyphicon glyphicon-user"></span></a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#"><font color="deepskyblue">Sign Up</font></a>
+  </li>
+  </ul>
+</div>
+</div>
+</div>  
+</nav>
+<br>
+<br>
+<br>
+<!--end-navigationbar-->
+<div class="container">
+<!-- three grids-->
+<div class="row">
+	<div class="col-lg-4">
+		<div class="w3-card">
+		<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="5"><strong>Lights-interior</strong></font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+			<div class="card-body">
+				<button type="button" class="btn btn-primary">All on</button>
+				<button type="button" class="btn btn-primary">All off</button>
+			</div>
+		</fieldset>
+		</div>
+	</div>
+	
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue" size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font  color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font  color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+	
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font size="5" color="royalblue"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+</div>			
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="row">
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue"size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+	
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue" size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue" size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="row">
+	<div class="col-lg-4">
+		<div class="w3-card">
+		<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="5"><strong>Lights-interior</strong></font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+			<div class="card-body">
+				<button type="button" class="btn btn-primary">All on</button>
+				<button type="button" class="btn btn-primary">All off</button>
+			</div>
+		</fieldset>
+		</div>
+	</div>
+	
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue" size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+	
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue" size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+</div>			
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="row">	
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue"size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+	
+	<div class="col-lg-4">
+		<div class="w3-card">
+			<fieldset>
+			<div class="card-body">
+			
+				<p style="float:left"><i class="fa fa-lightbulb-o" style="font-size:36px">&nbsp;&nbsp;</i><font color="royalblue" size="5"><strong>KITCHEN</strong></font></p>
+					<div class="float-right">
+						<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+						</label>
+					</div>
+			
+			</div>
+			</fieldset>
+			<fieldset>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>connection</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">ok</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left"><font color="royalblue" size="4"><strong>Power consumption</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">18w</font></p>
+			</div>
+			<br>
+			<div class="card-body">
+				<p style="float:left" ><font color="royalblue" size="4"><strong>Voltage range</strong></font></p>
+				<p style="float:right"><font color="royalblue" size="4">110-130v</font></p>
+			</div>
+		</fieldset>
+		<fieldset>
+		<div class="card-body">
+			<p><font color="royalblue" size="5"><strong>Dim</strong></font></p>
+			<input type="range" class="form-control-range" name="range">
+		</div>
+		</fieldset>
+		</div>
+	</div>
+</div>			
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+</html>
